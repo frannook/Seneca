@@ -144,3 +144,67 @@ a {
     color: #fff;
     font-size: 14px;
 }
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas medianas */
+        grid-gap: 30px;
+    }
+
+    .pie-pagina .grupo-1 .box figure img {
+        width: 220px; /* Ajustar tamaño de la imagen */
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        font-size: 18px; /* Ajustar tamaño del título */
+    }
+
+    .pie-pagina .grupo-1 .red-social a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pie-pagina .grupo-1 {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+        grid-gap: 20px;
+        text-align: center; /* Centrar contenido */
+    }
+    
+    .pie-pagina .grupo-1 .box figure img {
+        width: 180px; /* Tamaño de la imagen más pequeño */
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        font-size: 16px; /* Reducir tamaño del texto */
+    }
+
+    .pie-pagina .grupo-1 .red-social a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pie-pagina .grupo-1 {
+        padding: 30px 0; /* Reducir padding */
+    }
+    
+    .pie-pagina .grupo-1 .box figure img {
+        width: 150px; /* Imagen aún más pequeña */
+    }
+
+    .pie-pagina .grupo-1 .box h2 {
+        font-size: 14px; /* Reducir más el tamaño del texto */
+    }
+
+    .pie-pagina .grupo-1 .red-social a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
